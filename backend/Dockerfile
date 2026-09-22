@@ -14,4 +14,4 @@ COPY . .
 
 EXPOSE 4000
 
-CMD ["sh", "-c", "npx prisma migrate deploy && node prisma/seed.js && node src/index.js"]
+CMD ["sh", "-c", "npx prisma db push --accept-data-loss --skip-generate && node prisma/seed.js && node src/index.js"]
