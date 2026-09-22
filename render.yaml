@@ -1,0 +1,51 @@
+databases:
+  - name: babygreens-db
+    plan: free
+    region: frankfurt
+
+services:
+  - type: web
+    name: babygreens-backend
+    runtime: docker
+    rootDir: backend
+    plan: free
+    region: frankfurt
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: babygreens-db
+          property: connectionString
+      - key: PORT
+        value: 4000
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGIN
+        value: "*"
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 12h
+      - key: STRIPE_SECRET_KEY
+        value: sk_test_placeholder
+      - key: STRIPE_WEBHOOK_SECRET
+        value: whsec_placeholder
+      - key: FRONTEND_URL
+        value: "*"
+      - key: SEED_ADMIN_EMAIL
+        value: admin@babygreensbari.it
+      - key: SEED_ADMIN_PASSWORD
+        value: Babygreens2026!
+
+  - type: web
+    name: babygreens-frontend
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://babygreens-backend.onrender.com/api
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
