@@ -74,11 +74,12 @@ export default function Home() {
           </div>
 
           <div className="relative hidden md:block">
-            <div className="aspect-square rounded-[2rem] bg-gradient-to-br from-forest-600 to-forest-900 border border-forest-600 shadow-soft flex items-center justify-center">
-              <svg viewBox="0 0 200 200" className="w-2/3 h-2/3" fill="none" stroke="#f4ecd9" strokeWidth="2.2" strokeLinecap="round">
-                <path d="M100 176 C100 176 100 120 100 96 C100 56 68 32 24 32 C24 32 24 84 56 100 C72 108 100 112 100 112" />
-                <path d="M100 96 C100 64 124 40 172 40 C172 40 174 78 148 92 C136 100 100 104 100 104" />
-              </svg>
+            <div className="aspect-square rounded-[2rem] overflow-hidden border border-forest-600 shadow-soft">
+              <img
+                src="/images/hero.jpg"
+                alt="Selezione di microgreens Baby Greens Bari"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-cream-100 text-forest-900 rounded-2xl shadow-soft px-5 py-4 w-52">
               <p className="text-xs uppercase tracking-wide text-forest-500 font-medium mb-1">
@@ -133,11 +134,12 @@ export default function Home() {
       {/* Story */}
       <section id="storia" className="bg-forest-50 border-y border-forest-200">
         <div className="container-page py-20 grid md:grid-cols-2 gap-12 items-center">
-          <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-forest-200 to-forest-400 shadow-card flex items-center justify-center order-2 md:order-1">
-            <svg viewBox="0 0 200 140" className="w-3/4" fill="none" stroke="#2d4f3a" strokeWidth="1.6" strokeLinecap="round">
-              <path d="M20 120 Q20 60 60 60 Q60 20 100 20 Q140 20 140 60 Q180 60 180 120" />
-              <path d="M20 120h160" />
-            </svg>
+          <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-card order-2 md:order-1">
+            <img
+              src="/images/story.jpg"
+              alt="La preparazione dei piatti con i microgreens Baby Greens Bari"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="order-1 md:order-2">
             <span className="text-clay-600 text-xs font-semibold uppercase tracking-wide">La nostra storia</span>
