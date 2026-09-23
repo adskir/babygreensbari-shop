@@ -41,7 +41,7 @@ async function main() {
         "Microgreens di ravanello dal gusto deciso e leggermente piccante, con steli rosati e foglie verde brillante. Perfetti su tartare, uova e piatti a base di pesce crudo.",
       price: 390,
       stock: 18,
-      images: [],
+      images: ["/images/products/ravanello-piccante.jpg"],
       categorySlug: "piccanti",
     },
     {
@@ -51,7 +51,7 @@ async function main() {
         "Colore rosso intenso e sapore pungente simile al wasabi. Un tocco scenico e deciso per piatti di carne, tartare e taglieri gourmet.",
       price: 420,
       stock: 14,
-      images: [],
+      images: ["/images/products/senape-rossa.jpg"],
       categorySlug: "piccanti",
     },
     {
@@ -61,7 +61,7 @@ async function main() {
         "Versione in miniatura della rucola che conosci, con un aroma ancora più concentrato e note pepate. Ottima su pizze, bruschette e primi piatti.",
       price: 360,
       stock: 22,
-      images: [],
+      images: ["/images/products/rucola-selvatica.jpg"],
       categorySlug: "piccanti",
     },
     {
@@ -71,7 +71,7 @@ async function main() {
         "Germogli di pisello dolci e croccanti, con un sapore fresco che ricorda i piselli appena sgranati. Ideali crudi in insalata o saltati in padella all'ultimo minuto.",
       price: 350,
       stock: 25,
-      images: [],
+      images: ["/images/products/piselli-pea-shoots.jpg"],
       categorySlug: "dolci",
     },
     {
@@ -81,7 +81,7 @@ async function main() {
         "Consistenza croccante e sapore delicato di nocciola. Un classico versatile, ottimo in panini gourmet, poke bowl e insalate composte.",
       price: 340,
       stock: 20,
-      images: [],
+      images: ["/images/products/girasole.jpg"],
       categorySlug: "dolci",
     },
     {
@@ -91,7 +91,7 @@ async function main() {
         "Tutto l'aroma del basilico genovese concentrato in foglioline minuscole. Perfetto per guarnire piatti di pasta, pizza e antipasti mediterranei.",
       price: 400,
       stock: 16,
-      images: [],
+      images: ["/images/products/basilico-genovese-micro.jpg"],
       categorySlug: "dolci",
     },
     {
@@ -101,7 +101,7 @@ async function main() {
         "Steli rosso rubino e foglie verde scuro, con un gusto terroso leggermente dolce. Un tocco di colore d'impatto per piatti gourmet e finger food.",
       price: 380,
       stock: 15,
-      images: [],
+      images: ["/images/products/bietola-rossa.jpg"],
       categorySlug: "dolci",
     },
     {
@@ -111,7 +111,7 @@ async function main() {
         "Note piccanti e fresche, ricco di vitamina C. Ottimo abbinato a formaggi freschi, uova e panini gourmet.",
       price: 370,
       stock: 12,
-      images: [],
+      images: ["/images/products/crescione.jpg"],
       categorySlug: "piccanti",
     },
     {
@@ -121,7 +121,7 @@ async function main() {
         "Selezione settimanale di 4 varietà scelte dal nostro team in base al raccolto — perfetta per scoprire tutta la gamma Baby Greens Bari. Consegna ogni venerdì.",
       price: 1490,
       stock: 30,
-      images: [],
+      images: ["/images/products/box-degustazione-chef.jpg"],
       categorySlug: "box-abbonamento",
     },
     {
@@ -131,7 +131,7 @@ async function main() {
         "Abbonamento mensile con 4 consegne settimanali delle nostre varietà piccanti: ravanello, senape rossa, rucola e crescione. Disdici quando vuoi.",
       price: 4900,
       stock: 20,
-      images: [],
+      images: ["/images/products/box-piccante-mensile.jpg"],
       categorySlug: "box-abbonamento",
     },
     {
@@ -141,7 +141,7 @@ async function main() {
         "Tutto il necessario per coltivare i tuoi microgreens di girasole in casa: semi certificati, tappetino di coltivazione e istruzioni passo passo. Pronti in 10 giorni.",
       price: 1200,
       stock: 40,
-      images: [],
+      images: ["/images/products/kit-coltivazione-girasole.jpg"],
       categorySlug: "kit-coltivazione",
     },
     {
@@ -151,7 +151,7 @@ async function main() {
         "Kit completo per coltivare pea shoots freschi sul tuo davanzale: semi, vassoio riutilizzabile e guida illustrata. Ideale per iniziare con i microgreens.",
       price: 1200,
       stock: 35,
-      images: [],
+      images: ["/images/products/kit-coltivazione-piselli.jpg"],
       categorySlug: "kit-coltivazione",
     },
   ];
@@ -160,7 +160,7 @@ async function main() {
     const { categorySlug, ...data } = p;
     await prisma.product.upsert({
       where: { slug: p.slug },
-      update: {},
+      update: data,
       create: { ...data, categoryId: categoryRecords[categorySlug].id },
     });
   }
