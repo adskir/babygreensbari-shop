@@ -9,6 +9,10 @@ import Cart from "./pages/Cart.jsx";
 import Checkout from "./pages/Checkout.jsx";
 import CheckoutSuccess from "./pages/CheckoutSuccess.jsx";
 import CheckoutCancel from "./pages/CheckoutCancel.jsx";
+import KitDegustazione from "./pages/KitDegustazione.jsx";
+import Ricette from "./pages/Ricette.jsx";
+import Coltivazione from "./pages/Coltivazione.jsx";
+import Contatti from "./pages/Contatti.jsx";
 import AdminLogin from "./admin/AdminLogin.jsx";
 import AdminLayout from "./admin/AdminLayout.jsx";
 import AdminProducts from "./admin/AdminProducts.jsx";
@@ -34,6 +38,10 @@ export default function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/checkout/success" element={<CheckoutSuccess />} />
           <Route path="/checkout/cancel" element={<CheckoutCancel />} />
+          <Route path="/kit-degustazione" element={<KitDegustazione />} />
+          <Route path="/ricette" element={<Ricette />} />
+          <Route path="/coltivazione" element={<Coltivazione />} />
+          <Route path="/contatti" element={<Contatti />} />
         </Route>
       </Routes>
     </AuthProvider>
