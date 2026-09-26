@@ -5,8 +5,10 @@ import Logo from "./Logo.jsx";
 
 const navLinks = [
   { to: "/catalog", label: "Shop" },
-  { to: "/catalog?category=box-abbonamento", label: "Box in abbonamento" },
-  { to: "/#storia", label: "La nostra storia" },
+  { to: "/kit-degustazione", label: "Kit degustazione" },
+  { to: "/ricette", label: "Ricette" },
+  { to: "/coltivazione", label: "Per i coltivatori" },
+  { to: "/contatti", label: "Contatti" },
 ];
 
 export default function Header() {

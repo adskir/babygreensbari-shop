@@ -24,8 +24,10 @@ export default function Footer() {
           <ul className="space-y-2 text-sm text-forest-200">
             <li><Link to="/catalog" className="hover:text-white">Tutti i prodotti</Link></li>
             <li><Link to="/catalog?category=piccanti" className="hover:text-white">Microgreens piccanti</Link></li>
-            <li><Link to="/catalog?category=box-abbonamento" className="hover:text-white">Box in abbonamento</Link></li>
-            <li><Link to="/catalog?category=kit-coltivazione" className="hover:text-white">Kit da coltivare</Link></li>
+            <li><Link to="/kit-degustazione" className="hover:text-white">Kit degustazione</Link></li>
+            <li><Link to="/ricette" className="hover:text-white">Ricette</Link></li>
+            <li><Link to="/coltivazione" className="hover:text-white">Per i coltivatori</Link></li>
+            <li><Link to="/contatti" className="hover:text-white">Contatti</Link></li>
           </ul>
         </div>
 
