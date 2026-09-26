@@ -41,6 +41,7 @@ export const api = {
   listCategories: () => request(`/categories`),
   checkout: (payload) => request(`/orders/checkout`, { method: "POST", body: payload }),
   getOrder: (id) => request(`/orders/${id}`),
+  sendContactMessage: (payload) => request(`/contact`, { method: "POST", body: payload }),
 
   // Admin auth
   login: (email, password) =>
