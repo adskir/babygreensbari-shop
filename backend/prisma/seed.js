@@ -19,7 +19,7 @@ async function main() {
   const categories = [
     { name: "Microgreens piccanti", slug: "piccanti" },
     { name: "Microgreens dolci", slug: "dolci" },
-    { name: "Box in abbonamento", slug: "box-abbonamento" },
+    { name: "Kit degustazione", slug: "kit-degustazione" },
     { name: "Kit da coltivare", slug: "kit-coltivazione" },
   ];
 
@@ -115,24 +115,134 @@ async function main() {
       categorySlug: "piccanti",
     },
     {
-      name: "Box degustazione Chef",
-      slug: "box-degustazione-chef",
+      name: "Amaranto Rosso",
+      slug: "amaranto-rosso",
       description:
-        "Selezione settimanale di 4 varietà scelte dal nostro team in base al raccolto — perfetta per scoprire tutta la gamma Baby Greens Bari. Consegna ogni venerdì.",
-      price: 1490,
-      stock: 30,
-      images: ["/images/products/box-degustazione-chef.jpg"],
-      categorySlug: "box-abbonamento",
+        "Colore porpora intenso, tra i più scenografici in assoluto. Gusto leggermente acidulo e dolce, perfetto per decorare piatti da fine dining.",
+      price: 410,
+      stock: 14,
+      images: ["/images/products/amaranto-rosso.jpg"],
+      categorySlug: "dolci",
     },
     {
-      name: "Box Piccante Mensile",
-      slug: "box-piccante-mensile",
+      name: "Coriandolo",
+      slug: "coriandolo",
       description:
-        "Abbonamento mensile con 4 consegne settimanali delle nostre varietà piccanti: ravanello, senape rossa, rucola e crescione. Disdici quando vuoi.",
-      price: 4900,
+        "Aroma pungente e riconoscibile, amatissimo in cucina asiatica e messicana. Verde brillante, cresce in pochi giorni.",
+      price: 380,
+      stock: 16,
+      images: [],
+      categorySlug: "piccanti",
+    },
+    {
+      name: "Shiso Rosso",
+      slug: "shiso-rosso",
+      description:
+        "Foglia bicolore, viola scuro sopra e verde sotto, con note di menta e agrumi. Una delle varietà più scenografiche e ricercate dagli chef.",
+      price: 450,
+      stock: 10,
+      images: ["/images/products/shiso-rosso.jpg"],
+      categorySlug: "dolci",
+    },
+    {
+      name: "Cavolo Rosso",
+      slug: "cavolo-rosso",
+      description:
+        "Colore magenta acceso e consistenza croccante. Molto richiesto dagli chef proprio per l'impatto visivo su piatto.",
+      price: 390,
+      stock: 15,
+      images: ["/images/products/cavolo-rosso.jpg"],
+      categorySlug: "dolci",
+    },
+    {
+      name: "Nasturzio",
+      slug: "nasturzio",
+      description:
+        "Gusto speziato e leggermente dolce, con fiorellini eduli inclusi. Uno dei preferiti degli chef stellati per il suo impatto visivo.",
+      price: 480,
+      stock: 8,
+      images: [],
+      categorySlug: "piccanti",
+    },
+    {
+      name: "Radicchio Variegato",
+      slug: "radicchio-variegato",
+      description:
+        "Colore rosso vinaccia con venature bianche, gusto amarognolo tipicamente italiano. Un omaggio alle radici del nostro territorio.",
+      price: 400,
+      stock: 12,
+      images: [],
+      categorySlug: "piccanti",
+    },
+    {
+      name: "Cavolo Nero Toscano",
+      slug: "cavolo-nero-toscano",
+      description:
+        "Verde blu intenso e struttura robusta, gusto erbaceo e persistente. Un classico della tradizione toscana in versione micro.",
+      price: 400,
+      stock: 12,
+      images: ["/images/products/cavolo-nero-toscano.jpg"],
+      categorySlug: "dolci",
+    },
+    {
+      name: "Kit Piccante",
+      slug: "kit-piccante",
+      description:
+        "Il trio più deciso della nostra gamma: Ravanello Piccante, Senape Rossa e Crescione. Per chi ama i sapori forti su tartare, carne e taglieri.",
+      price: 990,
+      stock: 25,
+      images: [],
+      categorySlug: "kit-degustazione",
+    },
+    {
+      name: "Kit Delicato",
+      slug: "kit-delicato",
+      description:
+        "Un trio morbido e versatile: Piselli, Girasole e Basilico Genovese. Perfetto per insalate, panini gourmet e primi piatti.",
+      price: 990,
+      stock: 25,
+      images: [],
+      categorySlug: "kit-degustazione",
+    },
+    {
+      name: "Kit Chef Arcobaleno",
+      slug: "kit-chef-arcobaleno",
+      description:
+        "Il nostro kit più scenografico: un assaggio di tutte le varietà più colorate della gamma, dal porpora dell'amaranto al magenta del cavolo rosso. Ideale per chi vuole scoprire l'intera collezione Baby Greens Bari.",
+      price: 1690,
       stock: 20,
-      images: ["/images/products/box-piccante-mensile.jpg"],
-      categorySlug: "box-abbonamento",
+      images: [],
+      categorySlug: "kit-degustazione",
+    },
+    {
+      name: "Kit Toscano",
+      slug: "kit-toscano",
+      description:
+        "Un trio dal carattere tutto italiano: Cavolo Nero Toscano, Radicchio Variegato e Rucola Selvatica. Amaro, terroso, identitario.",
+      price: 1090,
+      stock: 20,
+      images: [],
+      categorySlug: "kit-degustazione",
+    },
+    {
+      name: "Kit Fiorito",
+      slug: "kit-fiorito",
+      description:
+        "Nasturzio, Amaranto Rosso e Shiso Rosso: il trio più colorato e floreale, con i fiorellini eduli del nasturzio come tocco finale.",
+      price: 1190,
+      stock: 15,
+      images: [],
+      categorySlug: "kit-degustazione",
+    },
+    {
+      name: "Kit Aromatico",
+      slug: "kit-aromatico",
+      description:
+        "Coriandolo, Basilico Genovese e Crescione: un trio pensato per chi ama gli aromi decisi in cucina, dall'asiatico al mediterraneo.",
+      price: 990,
+      stock: 20,
+      images: [],
+      categorySlug: "kit-degustazione",
     },
     {
       name: "Kit Coltivazione Girasole",
@@ -164,6 +274,12 @@ async function main() {
       create: { ...data, categoryId: categoryRecords[categorySlug].id },
     });
   }
+
+  // Retired products/categories from earlier catalog revisions — clean them up
+  // so redeploys don't leave orphaned items visible in the shop.
+  const retiredProductSlugs = ["box-degustazione-chef", "box-piccante-mensile"];
+  await prisma.product.deleteMany({ where: { slug: { in: retiredProductSlugs } } });
+  await prisma.category.deleteMany({ where: { slug: "box-abbonamento" } });
 
   console.log("Seed complete.");
 }
