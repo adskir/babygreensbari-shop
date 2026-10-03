@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext.jsx";
-import { api, formatPrice } from "../lib/api";
+import { formatPrice } from "../lib/api";
+import WaitlistModal from "../components/WaitlistModal.jsx";
 
 const FIELD_LABELS = {
   email: "Email",
@@ -23,8 +24,7 @@ export default function Checkout() {
     postalCode: "",
     country: "Italia",
   });
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   if (items.length === 0) {
     navigate("/cart");
@@ -35,21 +35,9 @@ export default function Checkout() {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
 
-  async function handleSubmit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
-    setError("");
-    setLoading(true);
-    try {
-      const payload = {
-        ...form,
-        items: items.map((i) => ({ productId: i.productId, quantity: i.quantity })),
-      };
-      const data = await api.checkout(payload);
-      window.location.href = data.checkoutUrl;
-    } catch (err) {
-      setError(err.message);
-      setLoading(false);
-    }
+    setModalOpen(true);
   }
 
   return (
@@ -66,7 +54,6 @@ export default function Checkout() {
               <input
                 type={field === "email" ? "email" : "text"}
                 name={field}
-                required
                 value={form[field]}
                 onChange={handleChange}
                 className="w-full border border-forest-200 rounded-lg px-3 py-2.5 bg-white focus:outline-none focus:border-clay-400"
@@ -74,17 +61,13 @@ export default function Checkout() {
             </div>
           ))}
 
-          {error && <p className="text-clay-600 text-sm">{error}</p>}
-
           <button
             type="submit"
-            disabled={loading}
-            className="w-full bg-forest-800 hover:bg-forest-900 text-white font-medium px-6 py-3.5 rounded-full transition-colors disabled:opacity-50"
+                        className="w-full bg-forest-800 hover:bg-forest-900 text-white font-medium px-6 py-3.5 rounded-full transition-colors disabled:opacity-50"
           >
-            {loading ? "Reindirizzamento al pagamento..." : "Paga ora"}
+            Paga ora
           </button>
           <p className="text-xs text-forest-500 text-center">
-            Pagamento sicuro gestito da Stripe.
           </p>
         </form>
 
@@ -106,6 +89,13 @@ export default function Checkout() {
           </div>
         </div>
       </div>
+      <WaitlistModal
+        open={modalOpen}
+        onClose={() => setModalOpen(false)}
+        items={items}
+        total={total}
+        customer={form}
+      />
     </div>
   );
 }

@@ -66,7 +66,12 @@ export default function Footer() {
       <div className="border-t border-forest-700">
         <div className="container-page py-5 text-xs text-forest-300 flex flex-col sm:flex-row justify-between gap-2">
           <span>© {new Date().getFullYear()} Baby Greens Bari. Tutti i diritti riservati.</span>
-          <span>Bari, Puglia, Italia</span>
+          <span>
+            Bari, Puglia, Italia ·{" "}
+            <a href="https://clickbari.it" target="_blank" rel="noopener" className="hover:text-clay-300 transition-colors">
+              Sito realizzato da ClickBari
+            </a>
+          </span>
         </div>
       </div>
     </footer>

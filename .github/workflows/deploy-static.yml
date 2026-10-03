@@ -1,0 +1,33 @@
+name: Build e deploy vetrina (OVH)
+
+on:
+  push:
+    branches: [main]
+    paths: ["frontend/**", ".github/workflows/deploy-static.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install
+        working-directory: frontend
+        run: npm ci || npm install
+      - name: Build
+        working-directory: frontend
+        run: npm run build
+      # Pubblica frontend/dist sul branch "dist": OVH (Multisito → Git) lo scarica a ogni push.
+      # Mai force_orphan: riscrivere la storia di "dist" blocca il pull lato OVH.
+      - name: Deploy su branch dist
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./frontend/dist
+          publish_branch: dist

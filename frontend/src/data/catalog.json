@@ -1,0 +1,468 @@
+{
+  "categories": [
+    {
+      "id": "cat-piccanti",
+      "name": "Microgreens piccanti",
+      "slug": "piccanti"
+    },
+    {
+      "id": "cat-dolci",
+      "name": "Microgreens dolci",
+      "slug": "dolci"
+    },
+    {
+      "id": "cat-kit-degustazione",
+      "name": "Kit degustazione",
+      "slug": "kit-degustazione"
+    },
+    {
+      "id": "cat-kit-coltivazione",
+      "name": "Kit da coltivare",
+      "slug": "kit-coltivazione"
+    }
+  ],
+  "products": [
+    {
+      "id": "p-ravanello-piccante",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Ravanello Piccante",
+      "slug": "ravanello-piccante",
+      "description": "Microgreens di ravanello dal gusto deciso e leggermente piccante, con steli rosati e foglie verde brillante. Perfetti su tartare, uova e piatti a base di pesce crudo.",
+      "price": 390,
+      "stock": 18,
+      "images": [
+        "/images/products/ravanello-piccante.jpg"
+      ],
+      "categoryId": "cat-piccanti",
+      "category": {
+        "id": "cat-piccanti",
+        "name": "Microgreens piccanti",
+        "slug": "piccanti"
+      },
+      "createdAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "p-senape-rossa",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Senape Rossa",
+      "slug": "senape-rossa",
+      "description": "Colore rosso intenso e sapore pungente simile al wasabi. Un tocco scenico e deciso per piatti di carne, tartare e taglieri gourmet.",
+      "price": 420,
+      "stock": 14,
+      "images": [
+        "/images/products/senape-rossa.jpg"
+      ],
+      "categoryId": "cat-piccanti",
+      "category": {
+        "id": "cat-piccanti",
+        "name": "Microgreens piccanti",
+        "slug": "piccanti"
+      },
+      "createdAt": "2026-09-01T01:00:00.000Z"
+    },
+    {
+      "id": "p-rucola-selvatica",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Rucola Selvatica",
+      "slug": "rucola-selvatica",
+      "description": "Versione in miniatura della rucola che conosci, con un aroma ancora più concentrato e note pepate. Ottima su pizze, bruschette e primi piatti.",
+      "price": 360,
+      "stock": 22,
+      "images": [
+        "/images/products/rucola-selvatica.jpg"
+      ],
+      "categoryId": "cat-piccanti",
+      "category": {
+        "id": "cat-piccanti",
+        "name": "Microgreens piccanti",
+        "slug": "piccanti"
+      },
+      "createdAt": "2026-09-01T02:00:00.000Z"
+    },
+    {
+      "id": "p-piselli-pea-shoots",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Piselli (Pea Shoots)",
+      "slug": "piselli-pea-shoots",
+      "description": "Germogli di pisello dolci e croccanti, con un sapore fresco che ricorda i piselli appena sgranati. Ideali crudi in insalata o saltati in padella all'ultimo minuto.",
+      "price": 350,
+      "stock": 25,
+      "images": [
+        "/images/products/piselli-pea-shoots.jpg"
+      ],
+      "categoryId": "cat-dolci",
+      "category": {
+        "id": "cat-dolci",
+        "name": "Microgreens dolci",
+        "slug": "dolci"
+      },
+      "createdAt": "2026-09-01T03:00:00.000Z"
+    },
+    {
+      "id": "p-girasole",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Girasole",
+      "slug": "girasole",
+      "description": "Consistenza croccante e sapore delicato di nocciola. Un classico versatile, ottimo in panini gourmet, poke bowl e insalate composte.",
+      "price": 340,
+      "stock": 20,
+      "images": [
+        "/images/products/girasole.jpg"
+      ],
+      "categoryId": "cat-dolci",
+      "category": {
+        "id": "cat-dolci",
+        "name": "Microgreens dolci",
+        "slug": "dolci"
+      },
+      "createdAt": "2026-09-01T04:00:00.000Z"
+    },
+    {
+      "id": "p-basilico-genovese-micro",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Basilico Genovese Micro",
+      "slug": "basilico-genovese-micro",
+      "description": "Tutto l'aroma del basilico genovese concentrato in foglioline minuscole. Perfetto per guarnire piatti di pasta, pizza e antipasti mediterranei.",
+      "price": 400,
+      "stock": 16,
+      "images": [
+        "/images/products/basilico-genovese-micro.jpg"
+      ],
+      "categoryId": "cat-dolci",
+      "category": {
+        "id": "cat-dolci",
+        "name": "Microgreens dolci",
+        "slug": "dolci"
+      },
+      "createdAt": "2026-09-01T05:00:00.000Z"
+    },
+    {
+      "id": "p-bietola-rossa",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Bietola Rossa",
+      "slug": "bietola-rossa",
+      "description": "Steli rosso rubino e foglie verde scuro, con un gusto terroso leggermente dolce. Un tocco di colore d'impatto per piatti gourmet e finger food.",
+      "price": 380,
+      "stock": 15,
+      "images": [
+        "/images/products/bietola-rossa.jpg"
+      ],
+      "categoryId": "cat-dolci",
+      "category": {
+        "id": "cat-dolci",
+        "name": "Microgreens dolci",
+        "slug": "dolci"
+      },
+      "createdAt": "2026-09-01T06:00:00.000Z"
+    },
+    {
+      "id": "p-crescione",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Crescione",
+      "slug": "crescione",
+      "description": "Note piccanti e fresche, ricco di vitamina C. Ottimo abbinato a formaggi freschi, uova e panini gourmet.",
+      "price": 370,
+      "stock": 12,
+      "images": [
+        "/images/products/crescione.jpg"
+      ],
+      "categoryId": "cat-piccanti",
+      "category": {
+        "id": "cat-piccanti",
+        "name": "Microgreens piccanti",
+        "slug": "piccanti"
+      },
+      "createdAt": "2026-09-01T07:00:00.000Z"
+    },
+    {
+      "id": "p-amaranto-rosso",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Amaranto Rosso",
+      "slug": "amaranto-rosso",
+      "description": "Colore porpora intenso, tra i più scenografici in assoluto. Gusto leggermente acidulo e dolce, perfetto per decorare piatti da fine dining.",
+      "price": 410,
+      "stock": 14,
+      "images": [
+        "/images/products/amaranto-rosso.jpg"
+      ],
+      "categoryId": "cat-dolci",
+      "category": {
+        "id": "cat-dolci",
+        "name": "Microgreens dolci",
+        "slug": "dolci"
+      },
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "p-coriandolo",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Coriandolo",
+      "slug": "coriandolo",
+      "description": "Aroma pungente e riconoscibile, amatissimo in cucina asiatica e messicana. Verde brillante, cresce in pochi giorni.",
+      "price": 380,
+      "stock": 16,
+      "images": [],
+      "categoryId": "cat-piccanti",
+      "category": {
+        "id": "cat-piccanti",
+        "name": "Microgreens piccanti",
+        "slug": "piccanti"
+      },
+      "createdAt": "2026-09-01T09:00:00.000Z"
+    },
+    {
+      "id": "p-shiso-rosso",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Shiso Rosso",
+      "slug": "shiso-rosso",
+      "description": "Foglia bicolore, viola scuro sopra e verde sotto, con note di menta e agrumi. Una delle varietà più scenografiche e ricercate dagli chef.",
+      "price": 450,
+      "stock": 10,
+      "images": [
+        "/images/products/shiso-rosso.jpg"
+      ],
+      "categoryId": "cat-dolci",
+      "category": {
+        "id": "cat-dolci",
+        "name": "Microgreens dolci",
+        "slug": "dolci"
+      },
+      "createdAt": "2026-09-01T10:00:00.000Z"
+    },
+    {
+      "id": "p-cavolo-rosso",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Cavolo Rosso",
+      "slug": "cavolo-rosso",
+      "description": "Colore magenta acceso e consistenza croccante. Molto richiesto dagli chef proprio per l'impatto visivo su piatto.",
+      "price": 390,
+      "stock": 15,
+      "images": [
+        "/images/products/cavolo-rosso.jpg"
+      ],
+      "categoryId": "cat-dolci",
+      "category": {
+        "id": "cat-dolci",
+        "name": "Microgreens dolci",
+        "slug": "dolci"
+      },
+      "createdAt": "2026-09-01T11:00:00.000Z"
+    },
+    {
+      "id": "p-nasturzio",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Nasturzio",
+      "slug": "nasturzio",
+      "description": "Gusto speziato e leggermente dolce, con fiorellini eduli inclusi. Uno dei preferiti degli chef stellati per il suo impatto visivo.",
+      "price": 480,
+      "stock": 8,
+      "images": [],
+      "categoryId": "cat-piccanti",
+      "category": {
+        "id": "cat-piccanti",
+        "name": "Microgreens piccanti",
+        "slug": "piccanti"
+      },
+      "createdAt": "2026-09-01T12:00:00.000Z"
+    },
+    {
+      "id": "p-radicchio-variegato",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Radicchio Variegato",
+      "slug": "radicchio-variegato",
+      "description": "Colore rosso vinaccia con venature bianche, gusto amarognolo tipicamente italiano. Un omaggio alle radici del nostro territorio.",
+      "price": 400,
+      "stock": 12,
+      "images": [],
+      "categoryId": "cat-piccanti",
+      "category": {
+        "id": "cat-piccanti",
+        "name": "Microgreens piccanti",
+        "slug": "piccanti"
+      },
+      "createdAt": "2026-09-01T13:00:00.000Z"
+    },
+    {
+      "id": "p-cavolo-nero-toscano",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Cavolo Nero Toscano",
+      "slug": "cavolo-nero-toscano",
+      "description": "Verde blu intenso e struttura robusta, gusto erbaceo e persistente. Un classico della tradizione toscana in versione micro.",
+      "price": 400,
+      "stock": 12,
+      "images": [
+        "/images/products/cavolo-nero-toscano.jpg"
+      ],
+      "categoryId": "cat-dolci",
+      "category": {
+        "id": "cat-dolci",
+        "name": "Microgreens dolci",
+        "slug": "dolci"
+      },
+      "createdAt": "2026-09-01T14:00:00.000Z"
+    },
+    {
+      "id": "p-kit-piccante",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Kit Piccante",
+      "slug": "kit-piccante",
+      "description": "Il trio più deciso della nostra gamma: Ravanello Piccante, Senape Rossa e Crescione. Per chi ama i sapori forti su tartare, carne e taglieri.",
+      "price": 990,
+      "stock": 25,
+      "images": [],
+      "categoryId": "cat-kit-degustazione",
+      "category": {
+        "id": "cat-kit-degustazione",
+        "name": "Kit degustazione",
+        "slug": "kit-degustazione"
+      },
+      "createdAt": "2026-09-01T15:00:00.000Z"
+    },
+    {
+      "id": "p-kit-delicato",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Kit Delicato",
+      "slug": "kit-delicato",
+      "description": "Un trio morbido e versatile: Piselli, Girasole e Basilico Genovese. Perfetto per insalate, panini gourmet e primi piatti.",
+      "price": 990,
+      "stock": 25,
+      "images": [],
+      "categoryId": "cat-kit-degustazione",
+      "category": {
+        "id": "cat-kit-degustazione",
+        "name": "Kit degustazione",
+        "slug": "kit-degustazione"
+      },
+      "createdAt": "2026-09-01T16:00:00.000Z"
+    },
+    {
+      "id": "p-kit-chef-arcobaleno",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Kit Chef Arcobaleno",
+      "slug": "kit-chef-arcobaleno",
+      "description": "Il nostro kit più scenografico: un assaggio di tutte le varietà più colorate della gamma, dal porpora dell'amaranto al magenta del cavolo rosso. Ideale per chi vuole scoprire l'intera collezione Baby Greens Bari.",
+      "price": 1690,
+      "stock": 20,
+      "images": [],
+      "categoryId": "cat-kit-degustazione",
+      "category": {
+        "id": "cat-kit-degustazione",
+        "name": "Kit degustazione",
+        "slug": "kit-degustazione"
+      },
+      "createdAt": "2026-09-01T17:00:00.000Z"
+    },
+    {
+      "id": "p-kit-toscano",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Kit Toscano",
+      "slug": "kit-toscano",
+      "description": "Un trio dal carattere tutto italiano: Cavolo Nero Toscano, Radicchio Variegato e Rucola Selvatica. Amaro, terroso, identitario.",
+      "price": 1090,
+      "stock": 20,
+      "images": [],
+      "categoryId": "cat-kit-degustazione",
+      "category": {
+        "id": "cat-kit-degustazione",
+        "name": "Kit degustazione",
+        "slug": "kit-degustazione"
+      },
+      "createdAt": "2026-09-01T18:00:00.000Z"
+    },
+    {
+      "id": "p-kit-fiorito",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Kit Fiorito",
+      "slug": "kit-fiorito",
+      "description": "Nasturzio, Amaranto Rosso e Shiso Rosso: il trio più colorato e floreale, con i fiorellini eduli del nasturzio come tocco finale.",
+      "price": 1190,
+      "stock": 15,
+      "images": [],
+      "categoryId": "cat-kit-degustazione",
+      "category": {
+        "id": "cat-kit-degustazione",
+        "name": "Kit degustazione",
+        "slug": "kit-degustazione"
+      },
+      "createdAt": "2026-09-01T19:00:00.000Z"
+    },
+    {
+      "id": "p-kit-aromatico",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Kit Aromatico",
+      "slug": "kit-aromatico",
+      "description": "Coriandolo, Basilico Genovese e Crescione: un trio pensato per chi ama gli aromi decisi in cucina, dall'asiatico al mediterraneo.",
+      "price": 990,
+      "stock": 20,
+      "images": [],
+      "categoryId": "cat-kit-degustazione",
+      "category": {
+        "id": "cat-kit-degustazione",
+        "name": "Kit degustazione",
+        "slug": "kit-degustazione"
+      },
+      "createdAt": "2026-09-01T20:00:00.000Z"
+    },
+    {
+      "id": "p-kit-coltivazione-girasole",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Kit Coltivazione Girasole",
+      "slug": "kit-coltivazione-girasole",
+      "description": "Tutto il necessario per coltivare i tuoi microgreens di girasole in casa: semi certificati, tappetino di coltivazione e istruzioni passo passo. Pronti in 10 giorni.",
+      "price": 1200,
+      "stock": 40,
+      "images": [
+        "/images/products/kit-coltivazione-girasole.jpg"
+      ],
+      "categoryId": "cat-kit-coltivazione",
+      "category": {
+        "id": "cat-kit-coltivazione",
+        "name": "Kit da coltivare",
+        "slug": "kit-coltivazione"
+      },
+      "createdAt": "2026-09-01T21:00:00.000Z"
+    },
+    {
+      "id": "p-kit-coltivazione-piselli",
+      "currency": "eur",
+      "isActive": true,
+      "name": "Kit Coltivazione Piselli",
+      "slug": "kit-coltivazione-piselli",
+      "description": "Kit completo per coltivare pea shoots freschi sul tuo davanzale: semi, vassoio riutilizzabile e guida illustrata. Ideale per iniziare con i microgreens.",
+      "price": 1200,
+      "stock": 35,
+      "images": [
+        "/images/products/kit-coltivazione-piselli.jpg"
+      ],
+      "categoryId": "cat-kit-coltivazione",
+      "category": {
+        "id": "cat-kit-coltivazione",
+        "name": "Kit da coltivare",
+        "slug": "kit-coltivazione"
+      },
+      "createdAt": "2026-09-01T22:00:00.000Z"
+    }
+  ]
+}

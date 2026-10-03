@@ -16,7 +16,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-cream-100/95 backdrop-blur border-b border-forest-200 sticky top-0 z-20">
+    <header className="bg-cream-100/95 backdrop-blur border-b border-forest-200">
       <div className="container-page flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2 text-forest-800 shrink-0">
           <Logo className="h-7 w-7" />
