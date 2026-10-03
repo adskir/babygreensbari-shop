@@ -111,13 +111,32 @@ const RECIPES = [
     ],
     steps: "Tosta il pane, adagia la burrata aperta, completa con Radicchio Variegato, un filo di miele, olio e un pizzico di sale.",
   },
+  {
+    slug: "involtini-nasturzio",
+    name: "Involtini di carta di riso con Nasturzio",
+    tagline: "Freschi, croccanti e coloratissimi: perfetti per l'aperitivo",
+    image: "/images/recipes/involtini-nasturzio.jpg",
+    ingredients: [
+      "6 fogli di carta di riso",
+      "1 cetriolo e 1 carota a bastoncini",
+      "1 avocado a fette",
+      "Un pugno abbondante di Nasturzio",
+      "Salsa di soia o salsa agrodolce per intingere",
+    ],
+    steps: "Ammorbidisci la carta di riso in acqua tiepida, farcisci con verdure, avocado e Nasturzio, arrotola stretto e taglia a metà. Servi su un letto di microgreens con i fiorellini in vista.",
+  },
 ];
 
 function RecipeCard({ item, badge }) {
   const accent = accentFor(item.slug);
   return (
     <div className="bg-white rounded-2xl border border-forest-200 overflow-hidden flex flex-col">
-      <div className={`aspect-[4/3] bg-gradient-to-br ${accent.bg} flex items-end p-4`}>
+      <div
+        className={`aspect-[4/3] bg-gradient-to-br ${accent.bg} flex items-end p-4 bg-cover bg-center`}
+        style={item.image ? { backgroundImage: `url(${item.image})` } : undefined}
+        role={item.image ? "img" : undefined}
+        aria-label={item.image ? item.name : undefined}
+      >
         <span className={`${accent.tag} text-white text-[11px] font-semibold uppercase tracking-wide px-2 py-1 rounded-full`}>
           {badge}
         </span>
