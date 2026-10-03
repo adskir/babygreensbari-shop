@@ -74,12 +74,12 @@ export default function Home() {
           </div>
 
           <div className="relative hidden md:block">
-            <div className="aspect-[4/5] rounded-[2rem] overflow-hidden border border-forest-600 shadow-soft">
+            <div className="aspect-square rounded-[2rem] overflow-hidden border border-forest-600 shadow-soft">
               <img
-                src="/images/hero-mano.jpg"
-                alt="Microgreens freschi Baby Greens Bari serviti su un piatto"
-                width="1080"
-                height="1349"
+                src="/images/hero-toast.jpg"
+                alt="Toast con uova, pomodorini e microgreens Baby Greens Bari"
+                width="736"
+                height="736"
                 className="w-full h-full object-cover"
                 fetchpriority="high"
               />
