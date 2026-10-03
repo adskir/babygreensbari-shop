@@ -4,6 +4,7 @@ import { accentFor } from "../lib/theme";
 const COCKTAILS = [
   {
     slug: "verde-detox",
+    image: "/images/recipes/verde-detox.jpg",
     name: "Verde Detox",
     tagline: "Mela verde, cetriolo, piselli e menta",
     ingredients: [
@@ -18,6 +19,7 @@ const COCKTAILS = [
   },
   {
     slug: "rosso-rubino",
+    image: "/images/recipes/rosso-rubino.jpg",
     name: "Rosso Rubino",
     tagline: "Barbabietola, mela, Bietola Rossa e zenzero",
     ingredients: [
