@@ -44,7 +44,7 @@ export default function Home() {
           </svg>
         </div>
 
-        <div className="container-page relative py-20 sm:py-28 grid md:grid-cols-2 gap-12 items-center">
+        <div className="container-page relative pt-14 pb-16 sm:py-28 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
           <div>
             <span className="inline-block bg-forest-700/60 border border-forest-600 text-clay-300 text-xs font-medium tracking-wide uppercase px-3 py-1 rounded-full mb-6">
               Coltivati e raccolti a Bari
@@ -73,8 +73,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative hidden md:block">
-            <div className="aspect-square rounded-[2rem] overflow-hidden border border-forest-600 shadow-soft">
+          <div className="relative mx-auto w-full max-w-md md:max-w-none pb-6 md:pb-0">
+            <div className="aspect-[4/3] md:aspect-square rounded-3xl md:rounded-[2rem] overflow-hidden border border-forest-600 shadow-soft">
               <img
                 src="/images/hero-toast.jpg"
                 alt="Toast con uova, pomodorini e microgreens Baby Greens Bari"
@@ -84,11 +84,11 @@ export default function Home() {
                 fetchpriority="high"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-cream-100 text-forest-900 rounded-2xl shadow-soft px-5 py-4 w-52">
+            <div className="absolute -bottom-0 left-3 md:-bottom-6 md:-left-6 bg-cream-100 text-forest-900 rounded-2xl shadow-soft px-4 py-3 md:px-5 md:py-4 w-44 md:w-52">
               <p className="text-xs uppercase tracking-wide text-forest-500 font-medium mb-1">
                 Raccolto stamattina
               </p>
-              <p className="font-display text-lg font-semibold leading-tight">
+              <p className="font-display text-base md:text-lg font-semibold leading-tight">
                 Ravanello Piccante
               </p>
               <p className="text-clay-600 font-semibold mt-1">€3,90</p>
