@@ -211,7 +211,9 @@
       "description": "Aroma pungente e riconoscibile, amatissimo in cucina asiatica e messicana. Verde brillante, cresce in pochi giorni.",
       "price": 380,
       "stock": 16,
-      "images": [],
+      "images": [
+        "/images/products/coriandolo.jpg"
+      ],
       "categoryId": "cat-piccanti",
       "category": {
         "id": "cat-piccanti",
