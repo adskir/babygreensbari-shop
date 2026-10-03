@@ -74,17 +74,15 @@ export default function Home() {
           </div>
 
           <div className="relative hidden md:block">
-            <div className="aspect-square rounded-[2rem] overflow-hidden border border-forest-600 shadow-soft">
-              <video
+            <div className="aspect-[4/5] rounded-[2rem] overflow-hidden border border-forest-600 shadow-soft">
+              <img
+                src="/images/hero-mano.jpg"
+                alt="Microgreens freschi Baby Greens Bari serviti su un piatto"
+                width="1080"
+                height="1349"
                 className="w-full h-full object-cover"
-                poster="/images/hero.jpg"
-                autoPlay
-                muted
-                loop
-                playsInline
-              >
-                <source src="/videos/hero-growth.mp4" type="video/mp4" />
-              </video>
+                fetchpriority="high"
+              />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-cream-100 text-forest-900 rounded-2xl shadow-soft px-5 py-4 w-52">
               <p className="text-xs uppercase tracking-wide text-forest-500 font-medium mb-1">
