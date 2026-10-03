@@ -75,6 +75,7 @@ const RECIPES = [
   },
   {
     slug: "uova-crescione",
+    image: "/images/recipes/uova-crescione.jpg",
     name: "Uova in camicia con Crescione",
     tagline: "La colazione gourmet del weekend",
     ingredients: [
@@ -126,6 +127,47 @@ const RECIPES = [
       "Salsa di soia o salsa agrodolce per intingere",
     ],
     steps: "Ammorbidisci la carta di riso in acqua tiepida, farcisci con verdure, avocado e Nasturzio, arrotola stretto e taglia a metà. Servi su un letto di microgreens con i fiorellini in vista.",
+  },  {
+    slug: "caprese-senape",
+    name: "Caprese con Senape Rossa e semi",
+    tagline: "La caprese di sempre, con un tocco piccante e croccante",
+    image: "/images/recipes/caprese-senape.jpg",
+    ingredients: [
+      "2 pomodori maturi",
+      "1 mozzarella fiordilatte",
+      "Un pugno di Senape Rossa",
+      "1 cucchiaio di semi misti (lino, chia, sesamo)",
+      "Olio extravergine, sale",
+    ],
+    steps: "Alterna fette di pomodoro e mozzarella a raggiera. Condisci con olio e sale, completa con Senape Rossa e una pioggia di semi.",
+  },
+  {
+    slug: "avocado-toast-crescione",
+    name: "Avocado toast con Crescione",
+    tagline: "Il brunch più semplice, con una nota fresca e pepata",
+    image: "/images/recipes/avocado-toast-crescione.jpg",
+    ingredients: [
+      "1 fetta di pane integrale",
+      "1/2 avocado maturo",
+      "1 cucchiaino di pesto o succo di limone",
+      "Un pugno di Crescione",
+      "Sale, pepe, olio extravergine",
+    ],
+    steps: "Tosta il pane e spalma un velo di pesto. Disponi l'avocado a fette sottili, condisci con sale, pepe e olio e completa con un ciuffo di Crescione.",
+  },
+  {
+    slug: "toast-uova-ravanello",
+    name: "Toast con uova barzotte e Ravanello Piccante",
+    tagline: "Colazione proteica con un tocco di colore",
+    image: "/images/recipes/toast-uova-ravanello.jpg",
+    ingredients: [
+      "2 fette di pane a lievitazione naturale",
+      "2 uova",
+      "1/2 avocado schiacciato",
+      "Un pugno di Ravanello Piccante",
+      "Sale, pepe nero",
+    ],
+    steps: "Cuoci le uova 6 minuti in acqua bollente, raffreddale e sgusciale. Spalma l'avocado sul pane tostato, adagia le uova tagliate a metà e completa con Ravanello Piccante, sale e pepe.",
   },
 ];
 
