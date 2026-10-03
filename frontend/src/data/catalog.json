@@ -269,7 +269,9 @@
       "description": "Gusto speziato e leggermente dolce, con fiorellini eduli inclusi. Uno dei preferiti degli chef stellati per il suo impatto visivo.",
       "price": 480,
       "stock": 8,
-      "images": [],
+      "images": [
+        "/images/products/nasturzio.jpg"
+      ],
       "categoryId": "cat-piccanti",
       "category": {
         "id": "cat-piccanti",
