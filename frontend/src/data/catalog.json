@@ -287,7 +287,9 @@
       "description": "Colore rosso vinaccia con venature bianche, gusto amarognolo tipicamente italiano. Un omaggio alle radici del nostro territorio.",
       "price": 400,
       "stock": 12,
-      "images": [],
+      "images": [
+        "/images/products/radicchio-variegato.jpg"
+      ],
       "categoryId": "cat-piccanti",
       "category": {
         "id": "cat-piccanti",
