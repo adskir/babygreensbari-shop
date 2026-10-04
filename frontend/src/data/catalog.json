@@ -331,7 +331,9 @@
       "description": "Il trio più deciso della nostra gamma: Ravanello Piccante, Senape Rossa e Crescione. Per chi ama i sapori forti su tartare, carne e taglieri.",
       "price": 990,
       "stock": 25,
-      "images": [],
+      "images": [
+        "/images/products/kit-piccante.jpg"
+      ],
       "categoryId": "cat-kit-degustazione",
       "category": {
         "id": "cat-kit-degustazione",
@@ -349,7 +351,9 @@
       "description": "Un trio morbido e versatile: Piselli, Girasole e Basilico Genovese. Perfetto per insalate, panini gourmet e primi piatti.",
       "price": 990,
       "stock": 25,
-      "images": [],
+      "images": [
+        "/images/products/kit-delicato.jpg"
+      ],
       "categoryId": "cat-kit-degustazione",
       "category": {
         "id": "cat-kit-degustazione",
@@ -367,7 +371,9 @@
       "description": "Il nostro kit più scenografico: un assaggio di tutte le varietà più colorate della gamma, dal porpora dell'amaranto al magenta del cavolo rosso. Ideale per chi vuole scoprire l'intera collezione Baby Greens Bari.",
       "price": 1690,
       "stock": 20,
-      "images": [],
+      "images": [
+        "/images/products/kit-chef-arcobaleno.jpg"
+      ],
       "categoryId": "cat-kit-degustazione",
       "category": {
         "id": "cat-kit-degustazione",
@@ -403,7 +409,9 @@
       "description": "Nasturzio, Amaranto Rosso e Shiso Rosso: il trio più colorato e floreale, con i fiorellini eduli del nasturzio come tocco finale.",
       "price": 1190,
       "stock": 15,
-      "images": [],
+      "images": [
+        "/images/products/kit-fiorito.jpg"
+      ],
       "categoryId": "cat-kit-degustazione",
       "category": {
         "id": "cat-kit-degustazione",
@@ -421,7 +429,9 @@
       "description": "Coriandolo, Basilico Genovese e Crescione: un trio pensato per chi ama gli aromi decisi in cucina, dall'asiatico al mediterraneo.",
       "price": 990,
       "stock": 20,
-      "images": [],
+      "images": [
+        "/images/products/kit-aromatico.jpg"
+      ],
       "categoryId": "cat-kit-degustazione",
       "category": {
         "id": "cat-kit-degustazione",
