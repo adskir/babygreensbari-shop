@@ -391,7 +391,9 @@
       "description": "Un trio dal carattere tutto italiano: Cavolo Nero Toscano, Radicchio Variegato e Rucola Selvatica. Amaro, terroso, identitario.",
       "price": 1090,
       "stock": 20,
-      "images": [],
+      "images": [
+        "/images/products/kit-toscano.jpg"
+      ],
       "categoryId": "cat-kit-degustazione",
       "category": {
         "id": "cat-kit-degustazione",
