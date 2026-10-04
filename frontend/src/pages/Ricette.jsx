@@ -33,6 +33,7 @@ const COCKTAILS = [
   },
   {
     slug: "energia-piccante",
+    image: "/images/recipes/energia-piccante.jpg",
     name: "Energia Piccante",
     tagline: "Ananas, Ravanello Piccante e lime",
     ingredients: [
@@ -46,6 +47,7 @@ const COCKTAILS = [
   },
   {
     slug: "chef-arcobaleno",
+    image: "/images/recipes/chef-arcobaleno.jpg",
     name: "Chef Arcobaleno",
     tagline: "Un mix dei nostri microgreens più colorati",
     ingredients: [
@@ -61,6 +63,7 @@ const COCKTAILS = [
 const RECIPES = [
   {
     slug: "tartare-ravanello",
+    image: "/images/recipes/tartare-ravanello.jpg",
     name: "Tartare di tonno con Ravanello Piccante",
     tagline: "Un antipasto veloce da ristorante, pronto in 15 minuti",
     ingredients: [
@@ -89,6 +92,7 @@ const RECIPES = [
   },
   {
     slug: "insalata-microgreens",
+    image: "/images/recipes/insalata-microgreens.jpg",
     name: "Insalata di microgreens con pesca, burrata e nocciole",
     tagline: "Un'insalata da ristorante, pronta in 10 minuti",
     ingredients: [
@@ -102,6 +106,7 @@ const RECIPES = [
   },
   {
     slug: "bruschetta-radicchio",
+    image: "/images/recipes/bruschetta-radicchio.jpg",
     name: "Bruschetta con burrata e Radicchio Variegato",
     tagline: "Il contrasto amaro-dolce che piace sempre",
     ingredients: [
